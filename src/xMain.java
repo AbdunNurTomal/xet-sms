@@ -4,14 +4,14 @@ import java.util.LinkedList;
 public class xMain {
   private CService srv;
   private xSQL sql;
-  private xSMS sms;
-	private xSMSListener smsMessageListener;
+  //private xSMS sms;
+  //private xSMSListener smsMessageListener;
   private xConfig cfg;
   
   public xMain(CService srv, xSQL sql, xSMS sms, xConfig cfg){
     this.srv = srv;
     this.sql = sql;
-    this.sms = sms;
+    //this.sms = sms;
     this.cfg = cfg;
   }
   
