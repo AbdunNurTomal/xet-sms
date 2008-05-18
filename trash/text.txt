@@ -1,0 +1,11 @@
+
+ReadMessages(): sample application.
+  Using jSMSEngine API 2.0.4
+
+Testin' Connection...
+Devel Library
+=========================================
+Native lib Version = RXTX-2.1-7pre20
+Java lib Version   = RXTX-2.1-7pre20
+Error 0x0 at /home/bob/rxtx-2.1-CVS-20050120/build/../src/termios.c(1296): Opera
+zione completata.

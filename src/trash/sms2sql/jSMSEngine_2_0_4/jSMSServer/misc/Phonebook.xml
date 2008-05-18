@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<phonebook>
+
+	<phonebookentry>
+		<code>myself</code>
+		<name>Thanasis Delenikas</name>
+		<phone>+30901</phone>
+	</phonebookentry>
+	<phonebookentry>
+		<code>mywife</code>
+		<name>My wife's name</name>
+		<phone>+30902</phone>
+	</phonebookentry>
+	<phonebookentry>
+		<code>myuncle</code>
+		<name>My uncle's name</name>
+		<phone>+30909</phone>
+	</phonebookentry>
+
+	<phonebookentry>
+		<code>friend1</code>
+		<name>My first friend's name</name>
+		<phone>+30801</phone>
+	</phonebookentry>
+	<phonebookentry>
+		<code>friend2</code>
+		<name>My second friend's name</name>
+		<phone>+30802</phone>
+	</phonebookentry>
+	<phonebookentry>
+		<code>friend3</code>
+		<name>My third friend's name</name>
+		<phone>+30803</phone>
+	</phonebookentry>
+
+	<phonebookentry>
+		<code>customer1</code>
+		<name>My first customer's name</name>
+		<phone>+30701</phone>
+	</phonebookentry>
+	<phonebookentry>
+		<code>customer2</code>
+		<name>My second customer's name</name>
+		<phone>+30702</phone>
+	</phonebookentry>
+
+	<group>
+		<code>family</code>
+		<name>Family members</name>
+		<member>myself</member>
+		<member>mywife</member>
+	</group>
+
+	<group>
+		<code>relatives</code>
+		<name>My relatives</name>
+		<member>myself</member>
+		<member>mywife</member>
+		<member>myuncle</member>
+	</group>
+
+	<group>
+		<code>friends</code>
+		<name>My friends</name>
+		<member>friend1</member>
+		<member>friend2</member>
+		<member>friend3</member>
+	</group>
+
+	<group>
+		<code>customers</code>
+		<name>My customers</name>
+		<member>customer1</member>
+		<member>customer2</member>
+	</group>
+</phonebook>

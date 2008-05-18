@@ -1,0 +1,514 @@
+html{height: 100%; margin-bottom: 1px} /*per la scrollbar laterale in Opera e Mozilla*/
+body, html {
+	/** TESTO **/
+	background-color: #000000; /** prima ffc000**/
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FFFF00;
+	text-align: center;
+	line-height: 2em;
+	
+	/** MARGINI **/
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	
+	/** SCROLLBAR **/	
+	/** colore del corpo **/
+	scrollbar-face-color:#777777;
+	/** angoli basso e destro **/
+	scrollbar-shadow-color:#cccccc;
+	/** angoli alto e sinistra **/
+	scrollbar-3dlight-color:#dddddd;
+	/** freccette nei pulsanti **/
+	scrollbar-arrow-color:#000000;
+	/** barra vuota, sfondo **/
+	scrollbar-track-color:#cccccc;
+	/** colore dell'effetto 3d **/
+	scrollbar-highlight-color:#ffffff;
+	/** effetto 3d 2 **/
+	scrollbar-darkshadow-Color:#000000;
+	
+	/** non mostra la scrollbar **/
+	/**overflow: hidden;**/
+
+}
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 1em;
+  	color: #cccccc;
+	
+}
+
+.abstract a, .text a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 1em;
+  	color: #cccccc;
+	
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline overline;
+}
+
+h1 {
+	background-color: #000000; /** prima ffc000**/
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FF0000;
+	text-align: center;
+	line-height: 2em;
+	font-size: 300%;	
+}
+
+h2 {
+	background-color: #000000; /** prima ffc000**/
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FF0000;
+	text-align: center;
+	line-height: 2em;
+	font-size: 160%;
+}
+
+h3 {
+	background-color: #000000; /** prima ffc000**/
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	font-size: 130%;
+	/*line-height: 2em;*/	
+}
+
+h4 {
+	background-color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#ff0000;
+	text-align: center;
+	font-size: 110%;
+	/*line-height: 2em;*/	
+}
+
+table {
+	border-color: #FF0000;
+}
+
+/*classi generiche*/
+div.center{
+	text-align:center;
+}
+
+div#container{
+	width:95%;
+	margin: 0 auto;
+	padding:0 20px;
+    background: #000000 url(fauxcolumn.jpg) repeat-y center;
+	text-align: left;
+}
+
+div#header{
+	position:relative;
+	height:200px;
+	background: #81A1B6 url(fastTemplate.png) no-repeat top left;
+}
+div#header img#logoprint{display:none}
+div#header h1{
+	position:absolute;
+	top: 100px;
+	left: 20px;
+	width:300px;
+	height:60px;
+    background: url(fastTemplate.png) no-repeat -20px -100px;
+}
+div#header h1 a{
+	display:block;
+	width:300px;
+	text-indent: -9000px;
+	text-decoration: none;
+	padding: 60px 0 0 0;
+    overflow: hidden;
+	height: 0px !important;
+	height /**/:60px;
+    background-image: url(fastTemplate.png);
+	background-position: -20px -100px;
+}
+div#header h1 a:hover{
+	background-position: -20px -300px;
+}
+div#header a#skipnav{
+	position: absolute;
+	left:-9000px;
+}
+
+div#menu{
+	background: #f;
+	float: left;
+	width:155px;
+	padding-bottom: 20px;
+}
+div#menu h4{
+	margin-top: 10px;
+	font-size: 120%;
+	font-weight:lighter;
+	color: #F0F0FF;
+}
+div#menu ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+div#menu li{
+	margin:0;
+	line-height: 1.3;
+}
+div#menu a{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #ff0000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 1em;
+  	color: #cccccc;
+	text-decoration:none;
+	padding-left:12px;
+	line-height: 1.6;
+    background: url(../immagini/lampadina.gif) no-repeat top left;
+}
+div#menu a:hover{
+	color: #000;
+	color: #ff0000;
+	text-decoration: underline overline;
+}
+
+div#content{
+	margin: 0 170px 0 175px;
+}
+div#content a{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 1em;
+  	color: #cccccc;
+}
+div#content a:hover{
+	border-bottom: 1px dotted #999;
+	color: #ff0000;
+	text-decoration: underline overline;
+}
+div#content ul{
+	margin:0 0 1em;
+	padding:0;
+	list-style-type: none;
+}
+div#content ul li{
+	margin:0;
+	padding-left:16px;
+	line-height:1.4;
+	background: url(bodybullet.jpg) no-repeat 0 4px;
+}
+/*stili per il fondo pagina*/
+div#footer{
+    background-color: #222222;
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding-bottom: 5px;
+    /*background: #0 url(footer.jpg) bottom;*/
+	color: #3A4C5A;font-size: 90%;
+}
+div#footer address{
+	font-style: normal;
+}
+div#footer p{
+	margin: 0;
+}
+
+/*Barra di navigazione a tab*/
+div#navigation{
+    background-color: #444444;
+    border-bottom: 1px solid #787878;
+    padding-left: 20px;
+	text-align: left;
+	color: #ffffff;
+}
+div#navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div#navigation li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+div#navigation li a{
+    text-decoration: none;
+    border: 1px solid #787878;
+    padding: 0px 0.3em;
+    background: #ccc;
+	color: #0000cc;
+}
+div#navigation li a:hover{
+    background-color: #f0f0f0;
+}
+div#navigation li#activelink a{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    color: #603;
+}
+div#navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/*stili per i messaggi*/
+div#messaggi{
+	background-color: #000000; /** prima ffc000**/
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FFFF00;
+	text-align: left;
+	line-height: 1em;
+}
+div#messaggi li{
+    display: inline;
+    margin: 0;
+    padding;0
+}
+div#messaggi ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*white-space: nowrap*/
+}
+div#messaggi li#mittente{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#messaggi li#mittente2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FFFF00;
+	text-align: center;
+	line-height: 2em;
+	font-size: 90%;	
+}
+div#messaggi li#dataora{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#messaggi li#dataora2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#00FF00;
+	text-align: center;
+	line-height: 2em;
+	font-size: 90%;	
+}
+div#messaggi li#testo{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#messaggi li#testo2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FF0000;
+	text-align: center;
+	line-height: 2em;
+	font-size: 150%;	
+}
+div#messaggi li#status{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#messaggi li#status2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#0000FF;
+	text-align: center;
+	line-height: 2em;
+	font-size: 90%;	
+}
+div#messaggi li#elimina a{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#0000FF;
+	text-align: center;
+	line-height: 2em;
+	font-size: 90%;	
+	text-decoration: none;
+}
+div#messaggi li#elimina a:hover{
+	color: #000;
+	color: #ff0000;
+	text-decoration: underline overline;
+	font-size: 90%;	
+}
+
+/*stili per la lista utenti*/
+div#utenti{
+	background-color: #000000; /** prima ffc000**/
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FFFF00;
+	text-align: left;
+	line-height: 1em;
+}
+div#utenti li{
+    display: inline;
+    margin: 0;
+    padding;0
+}
+div#utenti ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*white-space: nowrap*/
+}
+div#utenti li#nome{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#utenti li#nome2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FFFF00;
+	text-align: center;
+	line-height: 2em;
+	font-size: 90%;	
+}
+div#utenti li#numero{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#utenti li#numero2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#FF0000;
+	text-align: center;
+	line-height: 2em;
+	font-size: 120%;
+}
+div#utenti li#info{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#utenti li#info2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#00FF00;
+	text-align: center;
+	line-height: 2em;
+	font-size: 90%;	
+}
+div#utenti li#groups{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#cccccc;
+	text-align: center;
+	line-height: 2em;
+	font-size: 80%;
+}
+div#utenti li#groups2{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#0000FF;
+	text-align: center;
+	line-height: 2em;
+	font-size: 90%;	
+}
+/*non compatibile con ie6*/
+div#blink{
+	color: #FF0000;
+	text-decoration: blink; 
+}
+
+form,fieldset{
+	margin-top:0;
+	margin-left:0;
+	padding: 0;
+	border: 0px solid #000;
+}
+form label{
+	float:left;
+	width:80px;
+	line-height:23px;
+	margin-right:5px;
+	text-align:right;
+}
+form input,textarea{
+	margin-bottom:5px;
+	border-style:solid;
+	border-color: #8C8C8C #ABABAB #ABABAB #8C8C8C;
+    border-width:2px 1px 1px 2px;
+	background: #ffffff/*url(inputbk.jpg) repeat-x bottom;*/
+}
+form br{
+	clear:left;
+}
+input#submit{
+	margin: 10px 0 0 90px;
+	border: 1px solid #CCC;
+	padding: 0 5px;
+	background: #E6E6E6 url(buttonbk.jpg) repeat-x center left;
+}
+
+input#reset{
+	margin: 10px 0 0 90px;
+	border: 1px solid #CCC;
+	padding: 0 5px;
+	background: #E6E6E6 url(buttonbk.jpg) repeat-x center left;
+}
+
+a#logozip {
+position: fixed;
+right: 0;
+top: 0;
+display: block;
+height: 80px;
+width: 80px;
+background: url(logo_alto_dx.png) 
+top right no-repeat;
+text-indent: -999em;
+text-decoration: none;
+}
+/*patch per internet exploder*/
+* html a#logozip{
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
+a#logoradio {
+position: fixed;
+right: 0;
+bottom: 0;
+display: block;
+height: 80px;
+width: 80px;
+background: url(logo_basso_dx.png) bottom right no-repeat;
+text-indent: -999em;
+text-decoration: none;
+}
+/*patch per internet exploder*/
+* html a#logoradio{
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
