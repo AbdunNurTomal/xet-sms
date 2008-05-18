@@ -13,7 +13,7 @@ class xConfig{
   private String gsmDeviceManufacturer;
   private String gsmDeviceModel;
   private String simpin;
-  private int demonWait;
+  //private int demonWait;
   
   private Statement stmt;
   private ResultSet rs;
@@ -60,7 +60,7 @@ class xConfig{
       this.gsmDeviceManufacturer = rs.getString("gsmDeviceManufacturer");
       this.gsmDeviceModel = rs.getString("gsmDeviceModel");
       this.simpin = rs.getString("simpin");
-      this.demonWait = rs.getInt("demonWait");
+      //this.demonWait = rs.getInt("demonWait");
       /*
       System.out.println(this.comport+"\n");
       System.out.println(this.baudrate+"\n");
