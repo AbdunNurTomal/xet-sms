@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="commapi/|commapi/samples/BlackBox/|commapi/samples/ParallelBlackBox/|commapi/samples/SerialDemo/|commapi/samples/Simple/|sms2sql/jSMSEngine_2_0_4/|sms2sql/jSMSEngine_2_0_4/examples/|sms2sql/jSMSEngine_2_0_4/jSMSServer/|sqliterface/|trash/" kind="src" path="src"/>
+	<classpathentry excluding="samples/BlackBox/|samples/ParallelBlackBox/|samples/SerialDemo/|samples/Simple/" kind="src" path="src/commapi"/>
+	<classpathentry kind="src" path="src/commapi/samples/BlackBox"/>
+	<classpathentry kind="src" path="src/commapi/samples/ParallelBlackBox"/>
+	<classpathentry kind="src" path="src/commapi/samples/SerialDemo"/>
+	<classpathentry kind="src" path="src/commapi/samples/Simple"/>
+	<classpathentry excluding="jSMSServer/|examples/" kind="src" path="src/sms2sql/jSMSEngine_2_0_4"/>
+	<classpathentry kind="src" path="src/sms2sql/jSMSEngine_2_0_4/examples"/>
+	<classpathentry kind="src" path="src/sms2sql/jSMSEngine_2_0_4/jSMSServer"/>
+	<classpathentry kind="src" path="src/sqliterface"/>
+	<classpathentry kind="src" path="trash"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="jars/comm.jar"/>
+	<classpathentry kind="lib" path="jars/jSMSEngine.jar"/>
+	<classpathentry kind="lib" path="jars/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="jars/RXTXcomm.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,82 @@
+jSMSServer Application
+
+*** CHANGE LOG ***
+
+Version 2.0.3
+
+1) Added configuration option "general.gui" for forcing jSMSServer to run in console/text mode.
+
+==================================================================
+
+Version 2.0.0
+
+1) Changes in order to comply with the new jSMSEngine API design.
+2) Added MS SQL Server support.
+3) New configuration items: phone.manufacturer & phone.model.
+
+==================================================================
+
+Version 1.2.8
+
+1) Removed the Cache Directory configuration option (general.cache). This is no longer used.
+
+==================================================================
+
+Version 1.2.7
+
+1) Added configuration option for MySQL database support.
+2) Parsing of configuration file's database settings no longer assumes empty values on error.
+
+==================================================================
+
+Version 1.2.5
+
+1) New configuration item in jSMSServer.conf: "phone.forward_number". You may declare a phone to which all incoming messages should be automatically forwarded to.
+
+==================================================================
+
+Version 1.2.2
+
+1) Bug fix: incorrect incoming / outgoing statistics.
+2) Bug fix: automatic reconnect feature was not working as expected.
+
+==================================================================
+
+Version 1.2.1
+
+1) New configuration item in jSMSServer.conf: "phone.sim_pin". Here, you may declare your GSM device's SIM PIN number, which will be used by jSMSEngine API when it needs to log-in. If you leave it empty, then the GSM device should be ready before connection (SIM PIN should be entered by you).
+
+==================================================================
+
+Version 1.2
+
+1) Bug fix: the signal display was incorrectly calculated.
+2) Bug fix: when the database link was active, any outgoing messages from the database were dispatched correctly, but were not shown on jSMSServer window.
+
+==================================================================
+
+Version 1.1.3
+
+1) There are some minor changes made, regarding the stability of the jSMSServer. Once connected to a GSM device, jSMSServer will always try to reconnect during each refresh cycle, even if there was a fatal error in the previous refresh cycle, which caused the serial communication to drop. This helps jSMSServer to work continously and unattended, overcoming any errors during its operation.
+
+==================================================================
+
+Version 1.1.2
+
+1) There was an error in the way the service was initialized, and if you had your GSM mobile / modem connected to a port other than COM1, the connection would never be established. This bug was due to the way jSMSEngine was coded, and did not affect the API package, or the other examples.
+
+==================================================================
+
+Version 1.1
+
+This version of jSMSServer required jSMSEngine v1.1 and above.
+
+1) ** CONFIGURATION CHANGES **
+Due to the new functionality, some configuration changes are necessary. There are a couple of new lines that should be added in jSMSServer.conf. You may consult the existing conf file as a reference. These are as follows:
+
+* general.cache : This configuration line should point at a directory. This directory is to be used by jSMSServer as a "temp" directory. Please, do not point it in a directory where you have valuable stuff! This setting is mandatory.
+* phone.operation_mode : Should have one of the values "pdu" and "ascii". This denoted the operation mode in which jSMSServer is working. It is recommended to leave it to "pdu" value, since all devices support the PDU operation (whereas ASCII is optional and implemented in newer devices), and because some features require the PDU operation (now and in future versions where Smart Messaging will be implemented).
+* phone.smsc_number : The SMSC (message center) number, in international format (for example, I use  +3097100000 here in Greece / COSMOTE). You may leave this setting blank. If you leave it blank, the SMSC number already stored in the device / sim card will be used. This option is used *only* when in PDU mode.
+* phone.message_encoding : The encoding for every outgoing messages. Each message dispatched by jSMSServer (both from XML or database links) will be forced to have this encoding. You should define it with one of the values "7bit", "8bit" or "unicode". Default is 7bit. This indication is useful only when working in PDU mode.
+
+2) The <text> literal in xml files used by jSMSServer (in both incoming and outgoing directories) are placed in CDATA sections, in order to avoid problems when using special characters.
